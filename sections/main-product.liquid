@@ -307,17 +307,6 @@
                 share_link: share_url
               %}
 
-            {%- when 'custom_fields' -%}
-              {% if block.settings.field_name != blank %}
-                <div class="product-custom-field">
-                  <label class="product-custom-field__label" for="pr-custom-field-{{ block.settings.field_name | handle}}">{{ block.settings.field_name}}*</label>
-                  <input type="text" name="properties[{{ block.settings.field_name }}]" id="pr-custom-field-{{ block.settings.field_name | handle }}" class="pr-custom-field-input">
-                  {% if block.settings.field_description != blank %}
-                    <span class="pr-custom-field__description">{{ block.settings.field_description}}</span>
-                  {% endif %}
-                </div>
-              {%  endif %}
-
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
             {%- when 'buy_buttons' -%}

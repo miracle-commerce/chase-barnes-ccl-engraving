@@ -7,7 +7,18 @@ if (!customElements.get('product-form')) {
       this.form.querySelector('[name=id]').disabled = false;
       this.form.addEventListener('submit', this.onSubmitHandler.bind(this));
       this.cart = document.querySelector('cart-notification') || document.querySelector('cart-drawer');
+      this.customProperties = document.querySelectorAll('.pr-custom-field-input');
       this.submitButton = this.querySelector('[type="submit"]');
+      this.hasCustomProperty = true; 
+      this.customProperties.forEach((customProperty) => {
+        customProperty.addEventListener('input', ()=>{
+          if(customProperty.classList.contains('warn')){
+            customProperty.classList.remove('warn'); 
+            this.submitButton.setAttribute('aria-disabled', false);
+            this.hasCustomProperty = true;
+          }
+        })
+      })
       if (document.querySelector('cart-drawer')) this.submitButton.setAttribute('aria-haspopup', 'dialog');
 
       this.hideErrors = this.dataset.hideErrors === 'true';
@@ -16,10 +27,24 @@ if (!customElements.get('product-form')) {
     onSubmitHandler(evt) {
       evt.preventDefault();
       if (this.submitButton.getAttribute('aria-disabled') === 'true') return;
+      
+      // Validate CustomProperty;
+      for(let i = 0; i < this.customProperties.length; i++){
+        let customProperty = this.customProperties[i];
+        console.log(customProperty.value);
+        if(!customProperty.value){
+          this.hasCustomProperty = false;
+          customProperty.classList.add('warn');
+        }
+      }
+
+      if(!this.hasCustomProperty){
+        this.submitButton.setAttribute('aria-disabled', true);
+        return;
+      }
 
       this.handleErrorMessage();
 
-      this.submitButton.setAttribute('aria-disabled', true);
       this.submitButton.classList.add('loading');
       this.querySelector('.loading-overlay__spinner').classList.remove('hidden');
 

@@ -3165,6 +3165,10 @@ details-disclosure > details {
   height: 40px;
 }
 
+.pr-custom-field-input.warn{
+  border-color: rgba(255, 0, 0, 0.8);
+}
+
 .pr-custom-field__description{
   font-size: 14px;
 }
