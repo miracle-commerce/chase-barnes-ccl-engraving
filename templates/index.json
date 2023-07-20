@@ -1,0 +1,172 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "NaNoWriMo Award Plaques",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Get yours here!",
+            "button_link_1": "shopify:\/\/products\/nanowrimo-award-plaque-5-x-7",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image_2": "shopify:\/\/shop_images\/open-book-and-burnt-pages-on-white-sheet.jpg",
+        "image_overlay_opacity": 50,
+        "image_height": "small",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 2,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "652ebbdf-3f04-4aa5-9d17-1543c01e2b74": {
+      "type": "featured-product",
+      "blocks": {
+        "template--18641466097971__652ebbdf-3f04-4aa5-9d17-1543c01e2b74-1684358809c7215adb-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--18641466097971__652ebbdf-3f04-4aa5-9d17-1543c01e2b74-1684358809c7215adb-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--18641466097971__652ebbdf-3f04-4aa5-9d17-1543c01e2b74-1684358809c7215adb-2": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--18641466097971__652ebbdf-3f04-4aa5-9d17-1543c01e2b74-1684358809c7215adb-3": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--18641466097971__652ebbdf-3f04-4aa5-9d17-1543c01e2b74-1684358809c7215adb-4": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--18641466097971__652ebbdf-3f04-4aa5-9d17-1543c01e2b74-1684358809c7215adb-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--18641466097971__652ebbdf-3f04-4aa5-9d17-1543c01e2b74-1684358809c7215adb-6": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "9bf366be-d1ad-4be0-bcf2-0090e3630258": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Text block",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--18641466097971__652ebbdf-3f04-4aa5-9d17-1543c01e2b74-1684358809c7215adb-0",
+        "template--18641466097971__652ebbdf-3f04-4aa5-9d17-1543c01e2b74-1684358809c7215adb-1",
+        "template--18641466097971__652ebbdf-3f04-4aa5-9d17-1543c01e2b74-1684358809c7215adb-2",
+        "template--18641466097971__652ebbdf-3f04-4aa5-9d17-1543c01e2b74-1684358809c7215adb-3",
+        "template--18641466097971__652ebbdf-3f04-4aa5-9d17-1543c01e2b74-1684358809c7215adb-4",
+        "template--18641466097971__652ebbdf-3f04-4aa5-9d17-1543c01e2b74-1684358809c7215adb-5",
+        "template--18641466097971__652ebbdf-3f04-4aa5-9d17-1543c01e2b74-1684358809c7215adb-6",
+        "9bf366be-d1ad-4be0-bcf2-0090e3630258"
+      ],
+      "settings": {
+        "product": "nanowrimo-award-plaque-5-x-7",
+        "color_scheme": "background-2",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "c3682e51-3954-46ae-b616-7186d8d653ac": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "enable_video_looping": false,
+        "video": "shopify:\/\/files\/videos\/NaNoWriMo Plaque 720.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "featured_collection",
+    "652ebbdf-3f04-4aa5-9d17-1543c01e2b74",
+    "c3682e51-3954-46ae-b616-7186d8d653ac"
+  ]
+}

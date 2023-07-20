@@ -1,0 +1,46 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "c222b11f-da4d-4474-bd77-b66c33e2d57e": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "quick-links"
+          }
+        },
+        "798bdd64-298e-454a-b54f-52c42e6b84fe": {
+          "type": "text",
+          "settings": {
+            "heading": "<strong>Contact Us<\/strong>",
+            "subtext": "<p>Got a Question?<br\/>Email us or reach out on social media<\/p><p><strong>Phone\/Text: 801-810-5322<\/strong><\/p><p><strong>Mon-Fri 9am-5pm MST<\/strong><\/p><p><strong>Email: cclengravingawards@gmail.com<\/strong><\/p><p><strong>PO BOX 701512 West Valley City UT, 84170<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c222b11f-da4d-4474-bd77-b66c33e2d57e",
+        "798bdd64-298e-454a-b54f-52c42e6b84fe"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 36,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
